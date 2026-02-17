@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authentication UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="form-box">
+
+    <div class="button-box">
+      <button onclick="showLogin()" id="loginBtn">Login</button>
+      <button onclick="showSignup()" id="signupBtn">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="form active">
+      <h2>Welcome Back 👋</h2>
+
+      <div class="input-group">
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="loginPassword" required>
+        <label>Password</label>
+        <span onclick="togglePassword('loginPassword')">👁</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signupForm" class="form">
+      <h2>Create Account ✨</h2>
+
+      <div class="input-group">
+        <input type="text" required>
+        <label>Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="signupPassword" required>
+        <label>Password</label>
+        <span onclick="togglePassword('signupPassword')">👁</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Sign Up</button>
+    </form>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
